@@ -1,0 +1,142 @@
+[
+	{
+		"id": 1,
+		"name": "Anillo Constelación",
+		"image": "../assets/jewels/points_1.JPG",
+		"price": 12.0,
+		"discountPrice": 9.0,
+		"alt": "Anillo Constelación",
+		"images": [
+			{
+				"src": "../assets/jewels/points_1.JPG",
+				"alt": "Vista frontal del Anillo Constelación"
+			}
+		],
+		"details": [
+			"Este anillo está certificado con plata de ley 925. Talla #7. Contiene piedras de zirconia con acabado perfecto. Refleja equilibrio, estabilidad y orden. Perfecto para combinar con trajes y vestidos de colores marrón, gris o negro."
+		]
+	},
+	{
+		"id": 2,
+		"name": "Anillo de Lágrimas",
+		"image": "../assets/jewels/drops_1.JPG",
+		"price": 12.5,
+		"discountPrice": null,
+		"alt": "Anillo de Lágrimas",
+		"images": [
+			{
+				"src": "../assets/jewels/drops_1.JPG",
+				"alt": "Vista frontal del Anillo de Lágrimas"
+			}
+		],
+		"details": [
+			"Este anillo está certificado con plata de ley 925. Ajustable. Refleja sencillez, sensibilidad y adaptación. Perfecto para combinar con estilos casuales color pasteles o estampados de flores minimalistas."
+		]
+	},
+	{
+		"id": 3,
+		"name": "Anillo Infinito",
+		"image": "../assets/jewels/infinite_1.JPG",
+		"price": 11.9,
+		"discountPrice": 9.0,
+		"alt": "Anillo Infinito",
+		"images": [
+			{
+				"src": "../assets/jewels/infinite_1.JPG",
+				"alt": "Vista frontal del Anillo Infinito"
+			}
+		],
+		"details": [
+			"Este anillo está certificado con plata de ley 925. Talla 7. El símbolo de infinito es de plata rosa. Simboliza la abundancia, trascendencia y la permanencia. Ideal para combinar con accesorios sencillos y minimalistas, carteras pequeñas y estilo casual de tonos beige, piel y marrón matizado."
+		]
+	},
+	{
+		"id": 4,
+		"name": "Anillo D’Mami",
+		"image": "../assets/jewels/mom_1.JPG",
+		"price": 12.5,
+		"discountPrice": 9.0,
+		"alt": "Anillo D’Mami",
+		"images": [
+			{
+				"src": "../assets/jewels/mom_1.JPG",
+				"alt": "Vista frontal del Anillo D’Mami"
+			},
+			{
+				"src": "../assets/jewels/mom_2.JPG",
+				"alt": "Vista frontal del Anillo D’Mami"
+			}
+		],
+		"details": [
+			"Este anillo está certificado con plata de ley 925. Ajustable. Contiene un grabado en el interior con un valioso mensaje emocional. Ideal para regalarlo a la mujer que te dio la existencia."
+		]
+	},
+	{
+		"id": 5,
+		"name": "Anillo Lovely Rose",
+		"image": "../assets/jewels/pink-heart_1.JPG",
+		"price": 12.4,
+		"discountPrice": null,
+		"alt": "Anillo Lovely Rose",
+		"images": [
+			{
+				"src": "../assets/jewels/pink-heart_1.JPG",
+				"alt": "Vista frontal del Anillo Lovely Rose"
+			}
+		],
+		"details": [
+			"Este anillo está certificado con plata de ley 925. Talla #7. Contiene una piedra de zirconia color rosa en forma de corazón. Refleja amor genuino, sencillez y feminidad en toda su expresión. Perfecto para combinar con accesorios brillantes y elegantes y atuendos de colores blancos y plateados."
+		]
+	},
+	{
+		"id": 6,
+		"name": "Anillo de Ramas Plateadas",
+		"image": "../assets/jewels/plant_1.JPG",
+		"price": 12.2,
+		"discountPrice": null,
+		"alt": "Anillo de Ramas Plateadas",
+		"images": [
+			{
+				"src": "../assets/jewels/plant_1.JPG",
+				"alt": "Vista frontal del Anillo de Ramas Plateadas"
+			}
+		],
+		"details": [
+			"Este anillo está certificado con plata de ley 925. Ajustable. Contiene piedras de zirconia en formas de hojas. Refleja curiosidad, crecimiento e intelecto. Perfecto para combinar con atuendos elegantes de colores rojos vino, azul profundo y negro."
+		]
+	},
+	{
+		"id": 7,
+		"name": "Anillo Reina Blanca",
+		"image": "../assets/jewels/silver-heart_1.JPG",
+		"price": 12.8,
+		"discountPrice": null,
+		"alt": "Anillo Reina Blanca",
+		"images": [
+			{
+				"src": "../assets/jewels/silver-heart_1.JPG",
+				"alt": "Vista frontal del Anillo Reina Blanca"
+			}
+		],
+		"details": [
+			"Este anillo está certificado con plata de ley 925. Talla 7. Contiene una piedra de zirconia en forma de corazón y detalles con acabado impecable. Simboliza la bondad, generosidad y supremacía. Ideal para combinar con estilos elegantes de colores blanco, rosa pastel y celeste."
+		]
+	},
+	{
+		"id": 8,
+		"name": "Anillo Cuadrilátero",
+		"image": "../assets/jewels/square_1.JPG",
+		"price": 12.0,
+		"discountPrice": 9.0,
+		"alt": "Anillo Cuadrilátero",
+		"images": [
+			{
+				"src": "../assets/jewels/square_1.JPG",
+				"alt": "Vista frontal del Anillo Cuadrilátero"
+			}
+		],
+		"details": [
+			"Este anillo está certificado con plata de ley 925. Talla 7. Contiene una piedra de zirconia en forma de cuadrado. Simboliza control, uniformidad y compromiso. Perfecto para combinar con atuendos como trajes elegantes y atuendos exóticos de colores oscuros sin estampado."
+		]
+	}
+]

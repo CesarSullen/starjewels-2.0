@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:title" content="Star Jewel's - Solicitar Joya" />
+		<meta
+			property="og:description"
+			content="Solicita una joya exclusiva que no está en nuestro catálogo"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="../assets/icons/logo.png" />
+		<link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="../assets/icons/logo.png"
+		/>
+		<link rel="stylesheet" href="../style/style.css" />
+		<title>Star Jewel's - Solicitar Joya</title>
+	</head>
+	<body id="body">
+		<nav class="nav">
+			<a href="../index.html" class="nav-icon-wrapper">
+				<img src="../assets/icons/logo.png" class="nav-icon" />
+				<h1 class="nav-title">Star Jewel's</h1>
+			</a>
+			<button id="toggle-btn" class="toggle-btn">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
+			<ul class="nav-links">
+				<li>
+					<a href="../index.html#home" class="nav-link"><p>inicio</p></a>
+				</li>
+				<li>
+					<a href="../products.html" class="nav-link"><p>productos</p></a>
+				</li>
+				<li>
+					<a href="../index.html#about" class="nav-link"><p>sobre mí</p></a>
+				</li>
+				<li>
+					<a href="../docs/how-to.pdf" class="nav-link"><p>cuidado</p></a>
+				</li>
+			</ul>
+			<div id="side-bar" class="side-bar">
+				<ul class="side-bar-links">
+					<li>
+						<a href="../index.html#home" class="side-bar-link"><p>inicio</p></a>
+					</li>
+					<li>
+						<a href="../products.html" class="side-bar-link"
+							><p>productos</p></a
+						>
+					</li>
+					<li>
+						<a href="../index.html#about" class="side-bar-link"
+							><p>sobre mí</p></a
+						>
+					</li>
+					<li>
+						<a href="../docs/how-to.pdf" class="side-bar-link"
+							><p>cuidado</p></a
+						>
+					</li>
+				</ul>
+				<hr />
+				<div class="side-bar-social">
+					<a href="https://facebook.com/share/16ThrPxRc8/">
+						<img
+							src="../assets/icons/facebook-logo-bold.svg"
+							class="social-link"
+							alt="Facebook"
+						/>
+					</a>
+					<a href="https://instagram.com/maila_melina">
+						<img
+							src="../assets/icons/instagram-logo-bold.svg"
+							class="social-link"
+							alt="Instagram"
+						/>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="body-content">
+			<section class="custom-product">
+				<h2 class="section-title">Solicitar Joya</h2>
+				<div class="custom-product-container two-columns">
+					<div class="custom-product-form">
+						<div class="card-content card">
+							<h3>Encuesta sobre joyería de plata</h3>
+							<p>
+								Queremos conocer tus preferencias. Responde las siguientes
+								preguntas.
+							</p>
+							<form id="surveyForm" class="custom-form">
+								<label for="jewelryType"
+									>¿Qué tipo de joyería de plata prefieres (anillos, collares,
+									pulseras, etc.)?</label
+								>
+								<textarea
+									id="jewelryType"
+									name="jewelryType"
+									placeholder="Ej. Anillos, pulseras"
+									rows="2"
+									required
+								></textarea>
+
+								<label for="budget"
+									>¿Cuánto estarías dispuesto/a a pagar por una pieza de plata?
+									(Entre 8 y 15 USD)</label
+								>
+								<input
+									type="number"
+									class="budget-input"
+									id="budget"
+									name="budget"
+									placeholder="Ej. 10"
+									min="8"
+									max="15"
+									step="1"
+									required
+								/>
+
+								<label
+									>¿Qué factores influyen más en tu decisión de compra?
+									(Selecciona todos los que apliquen)</label
+								>
+								<div class="checkbox-group" id="factors" required>
+									<label
+										><input
+											type="checkbox"
+											class="factor-checkbox"
+											name="factors"
+											value="Precio"
+										/>
+										Precio</label
+									>
+									<label
+										><input
+											type="checkbox"
+											class="factor-checkbox"
+											name="factors"
+											value="Diseño"
+										/>
+										Diseño</label
+									>
+									<label
+										><input
+											type="checkbox"
+											class="factor-checkbox"
+											name="factors"
+											value="Marca"
+										/>
+										Marca</label
+									>
+									<label
+										><input
+											type="checkbox"
+											class="factor-checkbox"
+											name="factors"
+											value="Garantía"
+										/>
+										Garantía</label
+									>
+								</div>
+
+								<label for="purchasePlace"
+									>¿Dónde sueles comprar joyería de plata?</label
+								>
+								<select
+									class="purchase-place-select"
+									id="purchasePlace"
+									name="purchasePlace"
+									required
+								>
+									<option value="" disabled selected>
+										Selecciona una opción
+									</option>
+									<option value="Tiendas físicas">Tiendas físicas</option>
+									<option value="Tiendas virtuales">Tiendas virtuales</option>
+								</select>
+
+								<button type="submit" class="btn">Enviar respuestas</button>
+							</form>
+						</div>
+					</div>
+
+					<div class="custom-product-gallery">
+						<div class="custom-product-list">
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9417.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $22.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9418.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $22.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9419.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $22.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9420.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $22.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9421.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $22.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9422.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $22.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9423.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $22.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9424.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $16.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9425.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $16.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9426.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $16.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9427.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $16.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9428.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $16.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9429.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $16.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9430.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $16.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9431.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $16.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_23_IMG_9432.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $16.00</p>
+								</div>
+							</div>
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_24_IMG_9433.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $14.00</p>
+								</div>
+							</div>
+
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_24_IMG_9434.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $14.00</p>
+								</div>
+							</div>
+
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_24_IMG_9435.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $14.00</p>
+								</div>
+							</div>
+
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_24_IMG_9436.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $14.00</p>
+								</div>
+							</div>
+
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_24_IMG_9437.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $14.00</p>
+								</div>
+							</div>
+
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_24_IMG_9438.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $14.00</p>
+								</div>
+							</div>
+
+							<div class="custom-product-card card fade-in">
+								<img
+									src="../assets/jewels/request/2025_05_11_18_24_IMG_9439.JPG"
+									alt="Joya exclusiva"
+									class="custom-product-image"
+								/>
+								<div class="custom-product-info">
+									<h4>Joya exclusiva</h4>
+									<p>Precio estimado: $14.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-content">
+				<p>© 2025 Star Jewel's. All rights reserved.</p>
+				<div class="social-media">
+					<a href="https://facebook.com/share/16ThrPxRc8/">
+						<img
+							src="../assets/icons/facebook-logo-bold.svg"
+							class="social-link"
+							alt="Facebook"
+						/>
+					</a>
+					<a href="https://instagram.com/maila_melina">
+						<img
+							src="../assets/icons/instagram-logo-bold.svg"
+							class="social-link"
+							alt="Instagram"
+						/>
+					</a>
+				</div>
+				<p class="bold">
+					Desarrollado por <a href="https://cesarsullen.github.io">Saru</a>.
+				</p>
+			</div>
+		</footer>
+
+		<script src="../js/main.js"></script>
+	</body>
+</html>

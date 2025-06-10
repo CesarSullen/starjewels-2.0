@@ -1,0 +1,232 @@
+.custom-product-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.custom-product-form {
+	border-radius: $border-radius-rounded;
+
+	.card-content {
+		text-align: left;
+		padding: 1rem;
+
+		&:hover {
+			transform: none;
+			box-shadow: unset;
+		}
+	}
+
+	h3 {
+		color: $primary-color;
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		@media (min-width: 768px) {
+			font-size: 1.5rem;
+		}
+	}
+
+	p {
+		color: $dark-color;
+		font-size: 0.9rem;
+
+		@media (min-width: 768px) {
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+	}
+
+	.custom-form {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+
+		label {
+			color: $primary-color;
+			font-size: 0.9rem;
+			font-weight: 600;
+
+			@media (min-width: 768px) {
+				font-size: 1rem;
+			}
+		}
+
+		input,
+		textarea {
+			padding: 0.5rem;
+			border: $border-general;
+			border-radius: $border-radius-general;
+			font-size: 0.9rem;
+			color: $dark-color;
+			background: rgba(245, 245, 245, 0.8);
+			resize: vertical;
+			transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+			&:focus {
+				border-color: $primary-color;
+				box-shadow: 0 0 5px rgba($primary-color, 0.3);
+			}
+
+			@media (min-width: 768px) {
+				padding: 0.75rem;
+				font-size: 1rem;
+			}
+		}
+
+		.budget-input {
+			padding: 0.5rem;
+			border: $border-general;
+			border-radius: $border-radius-general;
+			font-size: 0.9rem;
+			color: $dark-color;
+			background: rgba(245, 245, 245, 0.8);
+			-moz-appearance: textfield;
+			appearance: textfield;
+
+			&::-webkit-inner-spin-button,
+			&::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+
+			&:focus {
+				border-color: $primary-color;
+				box-shadow: 0 0 5px rgba($primary-color, 0.3);
+			}
+
+			@media (min-width: 768px) {
+				padding: 0.75rem;
+				font-size: 1rem;
+			}
+		}
+
+		.purchase-place-select {
+			padding: 0.5rem;
+			border: $border-general;
+			border-radius: $border-radius-general;
+			font-size: 0.9rem;
+			color: $dark-color;
+			background: rgba(245, 245, 245, 0.8);
+			appearance: none;
+			background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23999" d="M6 9l-4-4h8z"/></svg>');
+			background-repeat: no-repeat;
+			background-position: right 0.75rem center;
+			background-size: 12px;
+
+			&:focus {
+				border-color: $primary-color;
+				box-shadow: 0 0 5px rgba($primary-color, 0.3);
+			}
+
+			@media (min-width: 768px) {
+				padding: 0.75rem;
+				font-size: 1rem;
+			}
+		}
+
+		.checkbox-group {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			margin-bottom: 0.75rem;
+
+			label {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				color: $dark-color;
+				font-size: 0.9rem;
+				font-weight: 400;
+				cursor: pointer;
+
+				@media (min-width: 768px) {
+					font-size: 1rem;
+				}
+			}
+
+			.factor-checkbox {
+				width: 1rem;
+				height: 1rem;
+				accent-color: $primary-color;
+				cursor: pointer;
+			}
+		}
+
+		.btn {
+			margin-top: 0.75rem;
+			font-size: 0.9rem;
+			padding: 0.5rem 1.5rem;
+
+			@media (min-width: 768px) {
+				margin-top: 1rem;
+				font-size: 1rem;
+				padding: 0.75rem 2rem;
+			}
+		}
+	}
+}
+
+.custom-product-gallery {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.custom-product-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+
+	@media (min-width: 768px) {
+		gap: 1.5rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.custom-product-card {
+	display: flex;
+	flex-direction: column;
+	border-radius: $border-radius-rounded;
+	box-shadow: 0 4px 15px rgba($primary-color, 0.3);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 6px 20px rgba($primary-color, 0.4);
+	}
+}
+
+.custom-product-image {
+	width: 100%;
+	aspect-ratio: 5/3;
+	object-fit: cover;
+	object-position: center;
+	max-height: 300px;
+}
+
+.custom-product-info {
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.9);
+	text-align: center;
+
+	h4 {
+		font-size: 1rem;
+		color: $primary-color;
+		text-transform: uppercase;
+		margin-bottom: 0.25rem;
+
+		@media (min-width: 768px) {
+			font-size: 1.1rem;
+		}
+	}
+
+	p {
+		font-size: 0.9rem;
+		color: $font-color;
+
+		@media (min-width: 768px) {
+			font-size: 1rem;
+		}
+	}
+}

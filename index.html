@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:title" content="Star Jewel's" />
+		<meta property="og:description" content="Glamour at 100%" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="./assets/icons/logo.png" />
+		<link rel="icon" type="image/png" href="./assets/icons/logo.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/icons/logo.png"
+		/>
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Star Jewel's</title>
+	</head>
+	<body id="body">
+		<nav class="nav">
+			<a href="./index.html" class="nav-icon-wrapper">
+				<img src="./assets/icons/logo.png" class="nav-icon" />
+				<h1 class="nav-title">Star Jewel's</h1>
+			</a>
+			<button id="toggle-btn" class="toggle-btn">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
+			<ul class="nav-links">
+				<li>
+					<a href="#home" class="nav-link"><p>inicio</p></a>
+				</li>
+				<li>
+					<a href="#products" class="nav-link"><p>productos</p></a>
+				</li>
+				<li>
+					<a href="#about" class="nav-link"><p>sobre mí</p></a>
+				</li>
+				<li>
+					<a href="./docs/how-to.pdf" class="nav-link"><p>cuidado</p></a>
+				</li>
+			</ul>
+			<div id="side-bar" class="side-bar">
+				<ul class="side-bar-links">
+					<li>
+						<a href="#home" class="side-bar-link"><p>inicio</p></a>
+					</li>
+					<li>
+						<a href="#products" class="side-bar-link"><p>productos</p></a>
+					</li>
+					<li>
+						<a href="#about" class="side-bar-link"><p>sobre mí</p></a>
+					</li>
+					<li>
+						<a href="./docs/how-to.pdf" class="side-bar-link"><p>cuidado</p></a>
+					</li>
+				</ul>
+				<hr />
+				<div class="side-bar-social">
+					<a href="https://facebook.com/share/16ThrPxRc8/">
+						<img
+							src="./assets/icons/facebook-logo-bold.svg"
+							class="social-link"
+							alt="Facebook"
+						/>
+					</a>
+					<a href="https://instagram.com/maila_melina">
+						<img
+							src="./assets/icons/instagram-logo-bold.svg"
+							class="social-link"
+							alt="Instagram"
+						/>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<header id="home" class="header">
+			<div class="header-content">
+				<h1 class="header-title show-up-blur">
+					<p>St☆r</p>
+					<p>Jewel's</p>
+				</h1>
+
+				<h3 class="header-subtitle show-up-blur">Las joyas de las estrellas</h3>
+
+				<div class="cta-section">
+					<a href="./views/individual-products.html"
+						><button class="btn show-up-blur">Compra ahora</button></a
+					>
+					<a href="https://wa.me/+5352383992?text=Hola!"
+						><button class="btn ghost-btn show-up-blur">Llámanos</button></a
+					>
+				</div>
+			</div>
+		</header>
+
+		<div class="body-content">
+			<section id="links" class="links">
+				<a href="./docs/warranty.html">
+					<button class="link fade-in">garantía</button></a
+				>
+				<a href="./docs/how-to.pdf">
+					<button class="link fade-in">cuidado de joyas</button></a
+				>
+				<a href="./docs/returns-policy.html">
+					<button class="link fade-in">política de devoluciones</button></a
+				>
+				<a href="./docs/vip-membership.html">
+					<button class="link fade-in">Membresía VIP</button>
+				</a>
+			</section>
+
+			<section id="why-us" class="why-us">
+				<div class="why-us-container">
+					<div class="reason fade-in">
+						<div class="card-content">
+							<img src="./assets/icons/ring.svg" class="reason-icon" />
+							<h3>Piezas Únicas</h3>
+							<p>
+								Joyas exclusivas de calidad para tí. No las necesitas para
+								brillar, pero querrás tenerlas todas.
+							</p>
+						</div>
+					</div>
+					<div class="reason fade-in">
+						<div class="card-content">
+							<img src="./assets/icons/necklace.svg" class="reason-icon" />
+							<h3>Experiencia Inolvidable</h3>
+							<p>
+								Empaque y envío totalmente gratis, porque nos importa tu
+								comodidad y satisfacción.
+							</p>
+						</div>
+					</div>
+					<div class="reason fade-in">
+						<div class="card-content">
+							<img src="./assets/icons/star-ring.svg" class="reason-icon" />
+							<h3>Sé Estrella</h3>
+							<p>
+								Forma parte de nuestro Club de Estrellas VIP para obtener
+								beneficios únicos.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="products" class="products">
+				<h2 class="section-title">Bienvenido(a) a Star Jewel's</h2>
+
+				<div class="products-container fade-in">
+					<a href="./views/individual-products.html" class="product-type">
+						<img
+							src="./assets/jewels/banners/1.JPG"
+							class="product-type-image"
+						/>
+						<div class="product-type-overlay">
+							<p class="product-type-title">productos individuales</p>
+						</div>
+					</a>
+					<div class="product-type locked">
+						<img
+							src="./assets/jewels/banners/2.JPG"
+							class="product-type-image"
+						/>
+						<div class="product-type-overlay">
+							<p class="product-type-title">sets de productos</p>
+						</div>
+					</div>
+					<a href="./views/limited-offers.html" class="product-type">
+						<img
+							src="./assets/jewels/banners/3.JPG"
+							class="product-type-image"
+						/>
+						<div class="product-type-overlay">
+							<p class="product-type-title">ofertas limitadas</p>
+						</div>
+					</a>
+					<a href="./views/request-product.html" class="product-type">
+						<img
+							src="./assets/jewels/banners/4.JPG"
+							class="product-type-image"
+						/>
+						<div class="product-type-overlay">
+							<p class="product-type-title">solicitar producto</p>
+						</div>
+					</a>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="about-container">
+					<div class="photo-stack">
+						<img src="./assets/preview/1.JPG" class="about-photo" />
+						<img src="./assets/preview/2.JPG" class="about-photo" />
+						<img src="./assets/preview/3.JPG" class="about-photo" />
+					</div>
+					<div id="about" class="jeweler-info card fade-in">
+						<h3>
+							<div>NUESTRA</div>
+							<div>HISTORIA</div>
+						</h3>
+						<p>
+							Detrás de Star Jewel’s no solo hay una chica que inicia un
+							emprendimiento, sino una visión clara:
+							<span class="bold"> ofrecer algo único y lleno de intención</span>
+							a quienes aman las joyas de plata y sienten una conexión especial
+							con su brillo. Mi inspiración nació al descubrir en el plateado
+							mucho más que un color. Para mí representa
+							<span class="bold"> glamour, equilibro, elegancia y éxito.</span>
+							Es un tono frío, pero poderoso; refleja lo que llevamos dentro
+							cuando estamos en armonía con nosotros mismos. Tengo un enorme
+							compromiso contigo: de que cada elección que hagas te convierta en
+							UNA ESTRELLA y que todos a tu alrededor brillen contigo. Si estás
+							leyendo esto,
+							<span class="bold">tus joyas te eligieron a ti primero.</span>
+							<span class="italic">
+								No vendemos joyas. Entregamos energía, intención y un pedacito
+								de universo en forma de plata.</span
+							>
+							<br />
+							<span class="bold"
+								>Bienvenido(a) a Star Jewel’s donde tu luz encuentra su reflejo.
+							</span>
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-content">
+				<p>© 2025 Star Jewel's. Todos los derechos reservados.</p>
+				<div class="social-media">
+					<a href="https://facebook.com/share/16ThrPxRc8/"
+						><img
+							src="./assets/icons/facebook-logo-bold.svg"
+							class="social-link"
+							alt="Facebook"
+					/></a>
+					<a href="https://instagram.com/maila_melina"
+						><img
+							src="./assets/icons/instagram-logo-bold.svg"
+							class="social-link"
+							alt="Instagram"
+					/></a>
+				</div>
+				<p class="bold">
+					Desarrollado por <a href="https://cesarsullen.github.io">Saru</a>.
+				</p>
+			</div>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
