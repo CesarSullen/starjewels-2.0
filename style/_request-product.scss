@@ -28,7 +28,7 @@
 	}
 
 	p {
-		color: $dark-color;
+		color: $light-color;
 		font-size: 0.9rem;
 
 		@media (min-width: 768px) {
@@ -43,7 +43,7 @@
 		gap: 0.75rem;
 
 		label {
-			color: $primary-color;
+			color: $light-color;
 			font-size: 0.9rem;
 			font-weight: 600;
 
@@ -55,11 +55,12 @@
 		input,
 		textarea {
 			padding: 0.5rem;
-			border: $border-general;
+			background: $glass-bg;
+			border: solid 1px $glass-border;
+			backdrop-filter: blur(10px);
 			border-radius: $border-radius-general;
 			font-size: 0.9rem;
-			color: $dark-color;
-			background: rgba(245, 245, 245, 0.8);
+			color: $light-color;
 			resize: vertical;
 			transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
@@ -76,11 +77,12 @@
 
 		.budget-input {
 			padding: 0.5rem;
-			border: $border-general;
+			background: $glass-bg;
+			border: solid 1px $glass-border;
+			backdrop-filter: blur(10px);
 			border-radius: $border-radius-general;
 			font-size: 0.9rem;
-			color: $dark-color;
-			background: rgba(245, 245, 245, 0.8);
+			color: $light-color;
 			-moz-appearance: textfield;
 			appearance: textfield;
 
@@ -107,7 +109,9 @@
 			border-radius: $border-radius-general;
 			font-size: 0.9rem;
 			color: $dark-color;
-			background: rgba(245, 245, 245, 0.8);
+			background: $glass-bg;
+			border: solid 1px $glass-border;
+			backdrop-filter: blur(10px);
 			appearance: none;
 			background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23999" d="M6 9l-4-4h8z"/></svg>');
 			background-repeat: no-repeat;
@@ -135,7 +139,7 @@
 				display: flex;
 				align-items: center;
 				gap: 0.5rem;
-				color: $dark-color;
+				color: $light-color;
 				font-size: 0.9rem;
 				font-weight: 400;
 				cursor: pointer;
@@ -223,7 +227,7 @@
 
 	p {
 		font-size: 0.9rem;
-		color: $font-color;
+		color: $dark-color;
 
 		@media (min-width: 768px) {
 			font-size: 1rem;

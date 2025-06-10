@@ -19,7 +19,7 @@
 
 // Header
 .header {
-	background: linear-gradient($primary-color, darken($primary-color, 12));
+	background: linear-gradient(135deg, $primary-color, $saru-color);
 	height: 100dvh;
 }
 .header-content {
@@ -41,7 +41,7 @@
 }
 .header-subtitle {
 	font-family: "DMSerifDisplay";
-
+	letter-spacing: 2px;
 	font-size: 5vw;
 	@include animation-delay(0.3s);
 
@@ -73,11 +73,11 @@
 }
 
 .section-title {
-	color: $font-color;
+	color: $primary-color;
 	text-transform: uppercase;
 	font-size: 2rem;
 	margin-bottom: 2rem;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	font-family: "DMSerifDisplay";
 }
 
@@ -93,12 +93,9 @@
 }
 
 .reason {
-	background-image: url(../assets/header.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: rgba(0, 0, 0, 0.8);
-	background-blend-mode: multiply;
+	background: $glass-bg;
+	backdrop-filter: blur(10px);
+	border: 1px solid $glass-border;
 	border-radius: $border-radius-rounded;
 	padding: 1rem;
 	display: flex;
@@ -108,7 +105,7 @@
 
 	&:hover {
 		transform: scale(1.05);
-		background-color: rgba(0, 0, 0, 1);
+		background-color: $dark-color;
 	}
 
 	.reason-icon {
@@ -167,10 +164,12 @@
 			transform: scale(1.3);
 		}
 		.product-type-overlay {
-			backdrop-filter: blur(5px);
+			background: $glass-bg;
+			backdrop-filter: blur(10px);
 		}
 		.product-type-title {
 			font-size: 1.8rem;
+			color: $secondary-color;
 		}
 	}
 }
@@ -243,7 +242,7 @@
 	object-fit: cover;
 	object-position: top;
 	position: relative;
-	max-width: 280px;
+	max-width: 250px;
 	&:first-child {
 		transform: rotate(-25deg) translateX(-5%);
 		z-index: 1;
@@ -285,7 +284,7 @@
 		margin-bottom: 1rem;
 		color: $primary-color;
 		position: relative;
-
+		text-shadow: 0 0 10px $primary-color;
 		font-size: 3.5rem;
 		line-height: 0.8;
 
@@ -301,7 +300,6 @@
 
 	p {
 		font-size: 1rem;
-		color: $dark-color;
 		line-height: 1.6;
 		text-align: justify;
 		font-weight: 500;
@@ -323,7 +321,9 @@
 	padding: 1rem 1.3rem;
 	border-radius: $border-radius-general;
 	border: solid 2px $secondary-color;
-	background: $secondary-color;
+	background: $glass-bg;
+	backdrop-filter: blur(10px);
+	border: 2px solid $glass-border;
 	font-size: 1rem;
 	cursor: pointer;
 	width: 100%;
@@ -335,7 +335,7 @@
 
 	&:hover {
 		translate: 0px -5px;
-		background-color: rgba(0, 0, 0, 1);
+		background-color: $dark-color;
 	}
 }
 // Footer

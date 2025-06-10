@@ -8,8 +8,11 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	background: $primary-color;
 	font-weight: bold;
+	background: $glass-bg;
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid $glass-border;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 .nav-icon-wrapper {
 	display: flex;
@@ -63,6 +66,9 @@
 			&:hover::after {
 				width: 100%;
 			}
+			&:hover {
+				text-shadow: 0 0 10px $light-color;
+			}
 		}
 	}
 }
@@ -86,7 +92,7 @@
 	height: 100vh;
 	transform: translateX(-200%);
 	padding: 1rem;
-	background-color: $primary-color;
+	background-color: $secondary-color;
 	z-index: -1;
 	gap: 50px;
 }
