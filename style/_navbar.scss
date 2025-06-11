@@ -9,7 +9,7 @@
 	align-items: center;
 	width: 100%;
 	font-weight: bold;
-	background: $glass-bg;
+	background: $primary-color;
 	backdrop-filter: blur(10px);
 	border-bottom: 1px solid $glass-border;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -66,9 +66,6 @@
 			&:hover::after {
 				width: 100%;
 			}
-			&:hover {
-				text-shadow: 0 0 10px $light-color;
-			}
 		}
 	}
 }
@@ -113,7 +110,7 @@
 	color: $light-color;
 	font-size: 1.5rem;
 	&:hover {
-		color: $primary-color;
+		color: $light-color;
 	}
 }
 .side-bar-social {

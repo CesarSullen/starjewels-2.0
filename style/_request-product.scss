@@ -17,7 +17,7 @@
 	}
 
 	h3 {
-		color: $primary-color;
+		color: $light-color;
 		font-size: 1.25rem;
 		text-transform: uppercase;
 		letter-spacing: 1px;
@@ -55,17 +55,15 @@
 		input,
 		textarea {
 			padding: 0.5rem;
-			background: $glass-bg;
-			border: solid 1px $glass-border;
-			backdrop-filter: blur(10px);
+			background: $light-color;
 			border-radius: $border-radius-general;
 			font-size: 0.9rem;
-			color: $light-color;
+			color: $primary-color;
 			resize: vertical;
 			transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
 			&:focus {
-				border-color: $primary-color;
+				border-color: $light-color;
 				box-shadow: 0 0 5px rgba($primary-color, 0.3);
 			}
 
@@ -77,9 +75,7 @@
 
 		.budget-input {
 			padding: 0.5rem;
-			background: $glass-bg;
-			border: solid 1px $glass-border;
-			backdrop-filter: blur(10px);
+			background: $light-color;
 			border-radius: $border-radius-general;
 			font-size: 0.9rem;
 			color: $light-color;
@@ -93,7 +89,7 @@
 			}
 
 			&:focus {
-				border-color: $primary-color;
+				border-color: $light-color;
 				box-shadow: 0 0 5px rgba($primary-color, 0.3);
 			}
 
@@ -108,10 +104,7 @@
 			border: $border-general;
 			border-radius: $border-radius-general;
 			font-size: 0.9rem;
-			color: $dark-color;
-			background: $glass-bg;
-			border: solid 1px $glass-border;
-			backdrop-filter: blur(10px);
+			background: $light-color;
 			appearance: none;
 			background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23999" d="M6 9l-4-4h8z"/></svg>');
 			background-repeat: no-repeat;
@@ -119,7 +112,7 @@
 			background-size: 12px;
 
 			&:focus {
-				border-color: $primary-color;
+				border-color: $light-color;
 				box-shadow: 0 0 5px rgba($primary-color, 0.3);
 			}
 
@@ -152,7 +145,7 @@
 			.factor-checkbox {
 				width: 1rem;
 				height: 1rem;
-				accent-color: $primary-color;
+				accent-color: $light-color;
 				cursor: pointer;
 			}
 		}
@@ -161,6 +154,8 @@
 			margin-top: 0.75rem;
 			font-size: 0.9rem;
 			padding: 0.5rem 1.5rem;
+			background-color: $light-color;
+			color: $secondary-color;
 
 			@media (min-width: 768px) {
 				margin-top: 1rem;

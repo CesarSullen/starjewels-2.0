@@ -1,6 +1,7 @@
 @import "reset";
 @import "animations";
 @import "navbar";
+@import "footer";
 @import "request-product";
 @import "products";
 @import "docs";
@@ -17,6 +18,15 @@
 	transform: translateY(300vh);
 }
 
+.section-title {
+	color: $primary-color;
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	letter-spacing: 2px;
+	font-family: "DMSerifDisplay";
+}
+
 // Header
 .header {
 	background: linear-gradient(135deg, $primary-color, $saru-color);
@@ -29,24 +39,24 @@
 	color: $light-color;
 }
 .header-title {
-	font-size: 20vw;
+	font-size: 20dvw;
 	text-align: center;
 	line-height: 0.9;
 	text-transform: uppercase;
 
 	@media screen and (min-width: 700px) {
-		font-size: 10vw;
+		font-size: 10dvw;
 		transform: none;
 	}
 }
 .header-subtitle {
 	font-family: "DMSerifDisplay";
 	letter-spacing: 2px;
-	font-size: 5vw;
+	font-size: 5dvw;
 	@include animation-delay(0.3s);
 
 	@media screen and (min-width: 700px) {
-		font-size: 3vw;
+		font-size: 3dvw;
 	}
 }
 .cta-section {
@@ -72,15 +82,6 @@
 	}
 }
 
-.section-title {
-	color: $primary-color;
-	text-transform: uppercase;
-	font-size: 2rem;
-	margin-bottom: 2rem;
-	letter-spacing: 2px;
-	font-family: "DMSerifDisplay";
-}
-
 // Why Us
 .why-us-container {
 	display: grid;
@@ -93,7 +94,7 @@
 }
 
 .reason {
-	background: $glass-bg;
+	background: $primary-color;
 	backdrop-filter: blur(10px);
 	border: 1px solid $glass-border;
 	border-radius: $border-radius-rounded;
@@ -105,7 +106,6 @@
 
 	&:hover {
 		transform: scale(1.05);
-		background-color: $dark-color;
 	}
 
 	.reason-icon {
@@ -164,7 +164,7 @@
 			transform: scale(1.3);
 		}
 		.product-type-overlay {
-			background: $glass-bg;
+			background: $primary-color;
 			backdrop-filter: blur(10px);
 		}
 		.product-type-title {
@@ -282,9 +282,7 @@
 
 	h3 {
 		margin-bottom: 1rem;
-		color: $primary-color;
 		position: relative;
-		text-shadow: 0 0 10px $primary-color;
 		font-size: 3.5rem;
 		line-height: 0.8;
 
@@ -320,10 +318,8 @@
 .link {
 	padding: 1rem 1.3rem;
 	border-radius: $border-radius-general;
-	border: solid 2px $secondary-color;
-	background: $glass-bg;
+	background: $primary-color;
 	backdrop-filter: blur(10px);
-	border: 2px solid $glass-border;
 	font-size: 1rem;
 	cursor: pointer;
 	width: 100%;
@@ -335,29 +331,5 @@
 
 	&:hover {
 		translate: 0px -5px;
-		background-color: $dark-color;
-	}
-}
-// Footer
-.footer {
-	margin-top: 2rem;
-	background: $primary-color;
-	color: $light-color;
-	padding: 20px;
-	text-align: center;
-	padding-block: 20vh;
-
-	.social-media {
-		margin-top: 10px;
-		a {
-			margin: 0 10px;
-
-			.social-link {
-				width: 35px;
-			}
-		}
-	}
-	.bold a {
-		color: $saru-color;
 	}
 }
