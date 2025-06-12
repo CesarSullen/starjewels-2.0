@@ -29,30 +29,51 @@
 
 // Header
 .header {
-	background: linear-gradient(135deg, $primary-color, $saru-color);
+	background-image: url(../assets/header.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	height: 100dvh;
 }
 .header-content {
 	height: 100%;
 	@include flex-center;
 	flex-direction: column;
-	color: $light-color;
+	color: $primary-color;
+
+	@media screen and (min-width: 700px) {
+		margin: auto;
+		max-width: 1200px;
+		padding: 2rem;
+		align-items: flex-start;
+	}
 }
 .header-title {
 	font-size: 20dvw;
 	text-align: center;
-	line-height: 0.9;
+	line-height: 0.8;
 	text-transform: uppercase;
 
+	p {
+		font-family: "DMSerifDisplay";
+		text-shadow: 2px 2px 10px rgba($color: $dark-color, $alpha: 0.7);
+	}
 	@media screen and (min-width: 700px) {
-		font-size: 10dvw;
+		font-size: 11dvw;
 		transform: none;
+		text-align: left;
+
+		:first-child {
+			font-size: 10dvw;
+		}
 	}
 }
 .header-subtitle {
 	font-family: "DMSerifDisplay";
 	letter-spacing: 2px;
 	font-size: 5dvw;
+	text-shadow: 2px 2px 10px rgba($color: $dark-color, $alpha: 0.7);
+
 	@include animation-delay(0.3s);
 
 	@media screen and (min-width: 700px) {
@@ -76,7 +97,8 @@
 	}
 
 	@media screen and (min-width: 700px) {
-		@include flex-center;
+		margin-top: 1rem;
+		padding: 0;
 		flex-direction: row;
 		top: unset;
 	}
@@ -169,7 +191,7 @@
 		}
 		.product-type-title {
 			font-size: 1.8rem;
-			color: $secondary-color;
+			color: $dark-color;
 		}
 	}
 }
@@ -243,18 +265,19 @@
 	object-position: top;
 	position: relative;
 	max-width: 250px;
+
 	&:first-child {
-		transform: rotate(-25deg) translateX(-5%);
+		transform: rotateZ(-25deg) translate(-5%, 0);
 		z-index: 1;
 	}
 
 	&:nth-child(2) {
-		transform: rotate(5deg) translate(5%, -10%);
+		transform: rotateZ(5deg) translate(5%, -10%);
 		z-index: 2;
 	}
 
 	&:last-child {
-		transform: rotate(-10deg) translate(-12%, -25%);
+		transform: rotateZ(-10deg) translate(-12%, -25%);
 		z-index: 1;
 	}
 
@@ -313,23 +336,5 @@
 
 	@media screen and (min-width: 700px) {
 		flex-direction: row;
-	}
-}
-.link {
-	padding: 1rem 1.3rem;
-	border-radius: $border-radius-general;
-	background: $primary-color;
-	backdrop-filter: blur(10px);
-	font-size: 1rem;
-	cursor: pointer;
-	width: 100%;
-	max-width: 600px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	color: $light-color;
-	font-weight: 600;
-
-	&:hover {
-		translate: 0px -5px;
 	}
 }

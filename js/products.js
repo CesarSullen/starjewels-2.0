@@ -105,12 +105,12 @@ document.addEventListener("DOMContentLoaded", () => {
 								.join("")}
             </div>
             <a href="../docs/how-to.pdf">
-              <button class="btn">¿Cómo cuidar tus joyas?</button>
+              <button class="btn ghost-btn">¿Cómo cuidar tus joyas?</button>
             </a>
             <a href="../docs/warranty.html">
-              <button class="btn">garantía</button>
+              <button class="btn ghost-btn">garantía</button>
             </a>
-            <button class="btn">Comprar</button>
+            <button class="btn ghost-btn">Comprar</button>
           </div>
         `;
 
