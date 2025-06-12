@@ -936,7 +936,6 @@ section {
 }
 .header-title p {
   font-family: "DMSerifDisplay";
-  text-shadow: 2px 2px 10px rgba(59, 59, 59, 0.7);
 }
 @media screen and (min-width: 700px) {
   .header-title {
@@ -953,7 +952,6 @@ section {
   font-family: "DMSerifDisplay";
   letter-spacing: 2px;
   font-size: 5dvw;
-  text-shadow: 2px 2px 10px rgba(59, 59, 59, 0.7);
   animation-delay: 0.3s;
   filter: blur(15px);
   transform: translateY(300vh);
