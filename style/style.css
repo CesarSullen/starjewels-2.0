@@ -985,6 +985,7 @@ section {
   filter: blur(15px);
   transform: translateY(300vh);
   backdrop-filter: blur(5px);
+  color: #3b3b3b;
 }
 @media screen and (min-width: 700px) {
   .cta-section {
@@ -1224,7 +1225,6 @@ section {
   padding-inline: 1rem;
   padding-block: 3rem;
   position: relative;
-  overflow: hidden;
 }
 .links .section-title {
   color: #fff;
