@@ -909,18 +909,21 @@ section {
   background-position: center;
   background-size: cover;
   height: 100dvh;
+  position: relative;
 }
 
 .header-content {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
   flex-direction: column;
   color: #c05670;
 }
 @media screen and (min-width: 700px) {
   .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     max-width: 1200px;
     padding: 2rem;
@@ -930,7 +933,6 @@ section {
 
 .header-title {
   font-size: 20dvw;
-  text-align: center;
   line-height: 0.8;
   text-transform: uppercase;
 }
@@ -939,17 +941,16 @@ section {
 }
 @media screen and (min-width: 700px) {
   .header-title {
-    font-size: 11dvw;
+    font-size: 10dvw;
     transform: none;
     text-align: left;
   }
   .header-title :first-child {
-    font-size: 10dvw;
+    font-size: 8dvw;
   }
 }
 
 .header-subtitle {
-  font-family: "DMSerifDisplay";
   letter-spacing: 2px;
   font-size: 5dvw;
   animation-delay: 0.3s;
@@ -966,23 +967,28 @@ section {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: 100%;
   max-width: 600px;
-  padding: 1rem;
-  bottom: 60px;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
 }
 .cta-section .btn {
   animation-delay: 0.5s;
   filter: blur(15px);
   transform: translateY(300vh);
 }
+.cta-section .btn:hover {
+  box-shadow: 0 2px 15px rgba(59, 59, 59, 0.8);
+}
 .cta-section .ghost-btn {
   animation-delay: 0.6s;
   filter: blur(15px);
   transform: translateY(300vh);
+  backdrop-filter: blur(5px);
 }
 @media screen and (min-width: 700px) {
   .cta-section {
+    position: unset;
     margin-top: 1rem;
     padding: 0;
     flex-direction: row;
@@ -1212,13 +1218,54 @@ section {
 
 .links {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  background-color: #c05670;
+  padding-inline: 1rem;
+  padding-block: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.links .section-title {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: unset;
+}
+.links .link a {
+  color: #1a1a2e;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+.links .link a:hover {
+  color: #fff;
+}
+.links .link a:hover::before {
+  content: "►";
+  color: #fff;
+  margin-right: 5px;
+}
+.links .about-photo {
+  max-width: 150px;
+  position: absolute;
+  right: 5%;
+}
+.links .about-photo:last-child {
+  transform: rotateZ(10deg) translateY(20%);
+}
+.links .about-photo:hover {
+  transform: none;
+  box-shadow: none;
+  z-index: unset;
+}
+@media screen and (min-width: 700px) {
+  .links .about-photo {
+    right: 20%;
+    max-width: 200px;
+  }
 }
 @media screen and (min-width: 700px) {
   .links {
-    flex-direction: row;
+    padding: 5rem;
   }
 }
 

@@ -34,14 +34,18 @@
 	background-position: center;
 	background-size: cover;
 	height: 100dvh;
+	position: relative;
 }
 .header-content {
 	height: 100%;
-	@include flex-center;
+	// @include flex-center;
+	padding: 1rem;
+	margin-top: 2rem;
 	flex-direction: column;
 	color: $primary-color;
 
 	@media screen and (min-width: 700px) {
+		@include flex-center;
 		margin: auto;
 		max-width: 1200px;
 		padding: 2rem;
@@ -50,7 +54,7 @@
 }
 .header-title {
 	font-size: 20dvw;
-	text-align: center;
+	// text-align: center;
 	line-height: 0.8;
 	text-transform: uppercase;
 
@@ -58,17 +62,16 @@
 		font-family: "DMSerifDisplay";
 	}
 	@media screen and (min-width: 700px) {
-		font-size: 11dvw;
+		font-size: 10dvw;
 		transform: none;
 		text-align: left;
 
 		:first-child {
-			font-size: 10dvw;
+			font-size: 8dvw;
 		}
 	}
 }
 .header-subtitle {
-	font-family: "DMSerifDisplay";
 	letter-spacing: 2px;
 	font-size: 5dvw;
 
@@ -82,19 +85,25 @@
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-	width: 100%;
 	max-width: 600px;
-	padding: 1rem;
-	bottom: 60px;
+	position: absolute;
+	bottom: 15%;
+	right: 5%;
 
 	.btn {
 		@include animation-delay(0.5s);
+
+		&:hover {
+			box-shadow: 0 2px 15px rgba($dark-color, 0.8);
+		}
 	}
 	.ghost-btn {
 		@include animation-delay(0.6s);
+		backdrop-filter: blur(5px);
 	}
 
 	@media screen and (min-width: 700px) {
+		position: unset;
 		margin-top: 1rem;
 		padding: 0;
 		flex-direction: row;
@@ -328,11 +337,56 @@
 // Links
 .links {
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
-	gap: 10px;
+	gap: 20px;
+	background-color: $primary-color;
+	padding-inline: 1rem;
+	padding-block: 3rem;
+	position: relative;
+	overflow: hidden;
+
+	.section-title {
+		color: $light-color;
+		font-size: 3rem;
+		margin-bottom: unset;
+	}
+
+	.link a {
+		color: $secondary-color;
+		text-transform: capitalize;
+		transition: all 0.5s;
+
+		&:hover {
+			color: $light-color;
+		}
+
+		&:hover::before {
+			content: "►";
+			color: $light-color;
+			margin-right: 5px;
+		}
+	}
+
+	.about-photo {
+		max-width: 150px;
+		position: absolute;
+		right: 5%;
+
+		&:last-child {
+			transform: rotateZ(10deg) translateY(20%);
+		}
+		&:hover {
+			transform: none;
+			box-shadow: none;
+			z-index: unset;
+		}
+		@media screen and (min-width: 700px) {
+			right: 20%;
+			max-width: 200px;
+		}
+	}
 
 	@media screen and (min-width: 700px) {
-		flex-direction: row;
+		padding: 5rem;
 	}
 }
