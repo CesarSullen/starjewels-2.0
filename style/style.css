@@ -319,7 +319,7 @@ section {
   height: 100vh;
   transform: translateX(-200%);
   padding: 1rem;
-  background-color: #1a1a2e;
+  background-color: #c05670;
   z-index: -1;
   gap: 50px;
 }
@@ -391,8 +391,7 @@ section {
 }
 
 .footer {
-  margin-top: 2rem;
-  background: #1a1a2e;
+  background: #c05670;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -933,11 +932,13 @@ section {
 }
 
 .header-content {
-  height: 100%;
+  height: 85%;
   padding: 1rem;
   margin-top: 2rem;
+  display: flex;
   flex-direction: column;
   color: #c05670;
+  justify-content: space-between;
 }
 @media screen and (min-width: 700px) {
   .header-content {
@@ -973,6 +974,7 @@ section {
 .header-subtitle {
   letter-spacing: 2px;
   font-size: 5dvw;
+  margin-top: 1rem;
   animation-delay: 0.3s;
   filter: blur(15px);
   transform: translateY(300vh);
@@ -986,11 +988,7 @@ section {
 .cta-section {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  max-width: 600px;
-  position: absolute;
-  bottom: 15%;
-  right: 5%;
+  gap: 10px;
 }
 .cta-section .btn {
   animation-delay: 0.5s;
@@ -1022,31 +1020,6 @@ section {
     padding: 0;
     flex-direction: row;
     top: unset;
-  }
-}
-
-.fluid-cta {
-  position: absolute;
-  bottom: 10%;
-  right: 0%;
-  cursor: pointer;
-}
-.fluid-cta .special-btn {
-  position: relative;
-  width: 100%;
-  max-width: 150px;
-}
-.fluid-cta img {
-  position: absolute;
-  width: 100%;
-  max-width: 40px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media screen and (min-width: 700px) {
-  .fluid-cta:hover {
-    transform: scale(1.1) translateX(-5%);
   }
 }
 
@@ -1102,7 +1075,7 @@ section {
 .products-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 10px;
   max-height: 500px;
   max-width: 900px;
   margin: 0 auto;
@@ -1115,7 +1088,7 @@ section {
 }
 @media screen and (min-width: 700px) {
   .products-container {
-    gap: 15px;
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
