@@ -17,15 +17,15 @@
 	}
 }
 
-.blur-in {
-	animation: blurIn 1.5s forwards;
+.blur-out {
+	animation: blurOut 1.5s forwards;
 }
-@keyframes blurIn {
+@keyframes blurOut {
 	0% {
-		filter: blur(0px);
+		filter: blur(10px);
 	}
 	to {
-		filter: blur(8px);
+		filter: blur(0px);
 	}
 }
 
@@ -37,5 +37,17 @@
 	&.show {
 		transform: translateY(0);
 		opacity: 1;
+	}
+}
+
+.zoom-up {
+	animation: zoomUp 1.5s forwards;
+}
+@keyframes zoomUp {
+	0% {
+		scale: 0;
+	}
+	to {
+		scale: 1;
 	}
 }

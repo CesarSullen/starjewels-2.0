@@ -46,13 +46,19 @@ $border-radius-rounded: 12px;
 .underline {
 	text-decoration: underline;
 }
-.hidden {
-	opacity: 0;
-	scale: 0.8;
+.desktop-hide {
+	display: flex;
+
+	@media screen and (min-width: 700px) {
+		display: none;
+	}
 }
-.shown {
-	opacity: 1;
-	scale: 1;
+.mobile-hide {
+	display: none;
+
+	@media screen and (min-width: 700px) {
+		display: flex;
+	}
 }
 hr {
 	width: 100%;

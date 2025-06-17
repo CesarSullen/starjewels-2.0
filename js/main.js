@@ -89,3 +89,8 @@ ${purchasePlace}
 
 		window.location.href = whatsappUrl;
 	});
+
+// Scroll Animation
+function scrollToSection() {
+	document.getElementById("links").scrollIntoView({ behavior: "smooth" });
+}

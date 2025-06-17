@@ -38,7 +38,6 @@
 }
 .header-content {
 	height: 100%;
-	// @include flex-center;
 	padding: 1rem;
 	margin-top: 2rem;
 	flex-direction: column;
@@ -54,13 +53,13 @@
 }
 .header-title {
 	font-size: 20dvw;
-	// text-align: center;
 	line-height: 0.8;
 	text-transform: uppercase;
 
 	p {
 		font-family: "DMSerifDisplay";
 	}
+
 	@media screen and (min-width: 700px) {
 		font-size: 10dvw;
 		transform: none;
@@ -100,7 +99,15 @@
 	.ghost-btn {
 		@include animation-delay(0.6s);
 		backdrop-filter: blur(5px);
-		color: $dark-color;
+		color: $light-color;
+
+		@media screen and (min-width: 700px) {
+			color: $primary-color;
+
+			&:hover {
+				color: $light-color;
+			}
+		}
 	}
 
 	@media screen and (min-width: 700px) {
@@ -111,7 +118,33 @@
 		top: unset;
 	}
 }
+.fluid-cta {
+	position: absolute;
+	bottom: 10%;
+	right: 0%;
+	cursor: pointer;
 
+	.special-btn {
+		position: relative;
+		width: 100%;
+		max-width: 150px;
+	}
+	img {
+		position: absolute;
+		width: 100%;
+		max-width: 40px;
+
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@media screen and (min-width: 700px) {
+		&:hover {
+			transform: scale(1.1) translateX(-5%);
+		}
+	}
+}
 // Why Us
 .why-us-container {
 	display: grid;
@@ -266,7 +299,7 @@
 
 .about-photo {
 	width: 100%;
-	border: 8px solid $light-color;
+	border: 8px solid $primary-color;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	aspect-ratio: 4/5;
 	object-fit: cover;
@@ -316,6 +349,7 @@
 		position: relative;
 		font-size: 3.5rem;
 		line-height: 0.8;
+		color: $primary-color;
 
 		:first-child {
 			text-align: left;
@@ -372,6 +406,7 @@
 		max-width: 150px;
 		position: absolute;
 		right: 5%;
+		border-color: $light-color;
 
 		&:last-child {
 			transform: rotateZ(10deg) translateY(20%);

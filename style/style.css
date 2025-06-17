@@ -37,14 +37,22 @@
   text-decoration: underline;
 }
 
-.hidden {
-  opacity: 0;
-  scale: 0.8;
+.desktop-hide {
+  display: flex;
+}
+@media screen and (min-width: 700px) {
+  .desktop-hide {
+    display: none;
+  }
 }
 
-.shown {
-  opacity: 1;
-  scale: 1;
+.mobile-hide {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .mobile-hide {
+    display: flex;
+  }
 }
 
 hr {
@@ -185,16 +193,16 @@ section {
     transform: translateY(0px);
   }
 }
-.blur-in {
-  animation: blurIn 1.5s forwards;
+.blur-out {
+  animation: blurOut 1.5s forwards;
 }
 
-@keyframes blurIn {
+@keyframes blurOut {
   0% {
-    filter: blur(0px);
+    filter: blur(10px);
   }
   to {
-    filter: blur(8px);
+    filter: blur(0px);
   }
 }
 .fade-in {
@@ -207,6 +215,18 @@ section {
   opacity: 1;
 }
 
+.zoom-up {
+  animation: zoomUp 1.5s forwards;
+}
+
+@keyframes zoomUp {
+  0% {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
 .nav {
   position: sticky;
   top: 0;
@@ -985,7 +1005,15 @@ section {
   filter: blur(15px);
   transform: translateY(300vh);
   backdrop-filter: blur(5px);
-  color: #3b3b3b;
+  color: #fff;
+}
+@media screen and (min-width: 700px) {
+  .cta-section .ghost-btn {
+    color: #c05670;
+  }
+  .cta-section .ghost-btn:hover {
+    color: #fff;
+  }
 }
 @media screen and (min-width: 700px) {
   .cta-section {
@@ -994,6 +1022,31 @@ section {
     padding: 0;
     flex-direction: row;
     top: unset;
+  }
+}
+
+.fluid-cta {
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  cursor: pointer;
+}
+.fluid-cta .special-btn {
+  position: relative;
+  width: 100%;
+  max-width: 150px;
+}
+.fluid-cta img {
+  position: absolute;
+  width: 100%;
+  max-width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 700px) {
+  .fluid-cta:hover {
+    transform: scale(1.1) translateX(-5%);
   }
 }
 
@@ -1155,7 +1208,7 @@ section {
 
 .about-photo {
   width: 100%;
-  border: 8px solid #fff;
+  border: 8px solid #c05670;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   aspect-ratio: 4/5;
   object-fit: cover;
@@ -1201,6 +1254,7 @@ section {
   position: relative;
   font-size: 3.5rem;
   line-height: 0.8;
+  color: #c05670;
 }
 .jeweler-info h3 :first-child {
   text-align: left;
@@ -1248,6 +1302,7 @@ section {
   max-width: 150px;
   position: absolute;
   right: 5%;
+  border-color: #fff;
 }
 .links .about-photo:last-child {
   transform: rotateZ(10deg) translateY(20%);
