@@ -5,7 +5,7 @@
 	0% {
 		opacity: 0;
 		filter: blur(15px);
-		transform: translateY(300vh);
+		transform: translateX(-300dvw);
 	}
 	80% {
 		opacity: 0;
@@ -13,7 +13,7 @@
 	to {
 		opacity: 1;
 		filter: blur(0px);
-		transform: translateY(0px);
+		transform: translateX(0dvw);
 	}
 }
 

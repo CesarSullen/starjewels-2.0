@@ -22,7 +22,7 @@
   font-weight: 400;
 }
 .important-text {
-  color: #fff;
+  color: #c05670;
 }
 
 .bold {
@@ -81,7 +81,7 @@ a {
 
 .btn {
   padding: 0.5rem 1.6rem;
-  border-radius: 8px;
+  border-radius: 4px;
   background: #c05670;
   border: 2px solid #c05670;
   font-size: 1rem;
@@ -142,7 +142,7 @@ section {
 }
 
 .card {
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 4px 20px rgba(59, 59, 59, 0.3);
   background: #c05670;
   backdrop-filter: blur(10px);
@@ -182,7 +182,7 @@ section {
   0% {
     opacity: 0;
     filter: blur(15px);
-    transform: translateY(300vh);
+    transform: translateX(-300dvw);
   }
   80% {
     opacity: 0;
@@ -190,7 +190,7 @@ section {
   to {
     opacity: 1;
     filter: blur(0px);
-    transform: translateY(0px);
+    transform: translateX(0dvw);
   }
 }
 .blur-out {
@@ -619,7 +619,7 @@ section {
 .custom-product-form .custom-form textarea {
   padding: 0.5rem;
   background: #fff;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 0.9rem;
   color: #c05670;
   resize: vertical;
@@ -640,7 +640,7 @@ section {
 .custom-product-form .custom-form .budget-input {
   padding: 0.5rem;
   background: #fff;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 0.9rem;
   color: #fff;
   -moz-appearance: textfield;
@@ -663,7 +663,7 @@ section {
 .custom-product-form .custom-form .purchase-place-select {
   padding: 0.5rem;
   border: solid 1px rgba(192, 86, 112, 0.4);
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 0.9rem;
   background: #fff;
   appearance: none;
@@ -824,7 +824,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 8px;
+  border-radius: 4px;
   transform: rotate(45deg);
 }
 .product-card:hover {
@@ -925,7 +925,7 @@ section {
   width: 100%;
   height: 400px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .product-detail-carousel.has-discount {
   position: relative;
@@ -944,7 +944,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 8px;
+  border-radius: 4px;
   transform: rotate(45deg);
   z-index: 1;
 }
@@ -1018,7 +1018,7 @@ section {
   gap: 1rem;
   text-align: left;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 4px;
   background: #c05670;
   border: solid 1px rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -1037,7 +1037,7 @@ section {
   max-width: 800px;
   margin: 0 auto;
   text-align: justify;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 4px 20px rgba(192, 86, 112, 0.3);
   background: rgba(245, 245, 245, 0.6);
   border: solid 1px rgba(192, 86, 112, 0.4);
@@ -1113,6 +1113,9 @@ section {
 .header-title p {
   font-family: "DMSerifDisplay";
 }
+.header-title p:last-child {
+  font-family: "Poppins";
+}
 @media screen and (min-width: 700px) {
   .header-title {
     font-size: 10dvw;
@@ -1126,12 +1129,15 @@ section {
 
 .header-subtitle {
   letter-spacing: 2px;
-  font-size: 5dvw;
-  margin-top: 1rem;
+  font-size: 4.5dvw;
+  margin-top: 1.5rem;
+  animation-delay: 0.2s;
+  filter: blur(15px);
+  transform: translateY(300vh);
 }
 @media screen and (min-width: 700px) {
   .header-subtitle {
-    font-size: 3dvw;
+    font-size: 2.5dvw;
   }
 }
 
@@ -1140,15 +1146,30 @@ section {
   flex-direction: column;
   gap: 10px;
 }
-.cta-section .btn:hover {
-  box-shadow: 0 2px 15px rgba(59, 59, 59, 0.8);
+.cta-section .btn {
+  animation-delay: 0.4s;
+  filter: blur(15px);
+  transform: translateY(300vh);
+}
+@media screen and (min-width: 700px) {
+  .cta-section .btn {
+    animation-delay: 0.6s;
+    filter: blur(15px);
+    transform: translateY(300vh);
+  }
 }
 .cta-section .ghost-btn {
+  animation-delay: 0.6s;
+  filter: blur(15px);
+  transform: translateY(300vh);
   backdrop-filter: blur(5px);
   color: #fff;
 }
 @media screen and (min-width: 700px) {
   .cta-section .ghost-btn {
+    animation-delay: 0.4s;
+    filter: blur(15px);
+    transform: translateY(300vh);
     color: #c05670;
   }
   .cta-section .ghost-btn:hover {
@@ -1158,7 +1179,7 @@ section {
 @media screen and (min-width: 700px) {
   .cta-section {
     position: unset;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 0;
     flex-direction: row;
     top: unset;
@@ -1177,11 +1198,15 @@ section {
 }
 
 .reason {
-  background: #c05670;
-  backdrop-filter: blur(10px);
+  background-image: url(../assets/silver-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: #c05670;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1197,10 +1222,11 @@ section {
   font-size: 1.5rem;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
   font-family: "DMSerifDisplay";
 }
 .reason p {
+  margin-top: 0.8rem;
   font-size: 0.95rem;
   line-height: 1.6;
   color: #fff;
@@ -1239,14 +1265,13 @@ section {
 
 .product-type {
   position: relative;
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
 }
 .product-type:hover .product-type-image {
   transform: scale(1.3);
 }
 .product-type:hover .product-type-overlay {
-  background: rgba(192, 86, 112, 0.5);
   backdrop-filter: blur(10px);
 }
 .product-type:hover .product-type-title {
@@ -1254,7 +1279,7 @@ section {
 }
 
 .product-type-image {
-  border-radius: 8px;
+  border-radius: 4px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1262,7 +1287,7 @@ section {
 }
 
 .product-type-overlay {
-  border-radius: 8px;
+  border-radius: 4px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1331,6 +1356,7 @@ section {
   object-position: top;
   position: relative;
   max-width: 250px;
+  transition: all 0.3s;
 }
 .about-photo:first-child {
   transform: rotateZ(-25deg) translate(-5%, 0);
