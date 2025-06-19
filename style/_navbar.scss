@@ -9,7 +9,7 @@
 	align-items: center;
 	width: 100%;
 	font-weight: bold;
-	background: rgba($color: $primary-color, $alpha: 0.85);
+	background: $primary-color;
 	backdrop-filter: blur(10px);
 	border-bottom: 1px solid $glass-border;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);

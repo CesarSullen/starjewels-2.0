@@ -77,8 +77,6 @@
 	font-size: 5dvw;
 	margin-top: 1rem;
 
-	@include animation-delay(0.3s);
-
 	@media screen and (min-width: 700px) {
 		font-size: 3dvw;
 	}
@@ -89,14 +87,14 @@
 	gap: 10px;
 
 	.btn {
-		@include animation-delay(0.5s);
+		@include animation-delay(0.4s);
 
 		&:hover {
 			box-shadow: 0 2px 15px rgba($dark-color, 0.8);
 		}
 	}
 	.ghost-btn {
-		@include animation-delay(0.6s);
+		@include animation-delay(0.5s);
 		backdrop-filter: blur(5px);
 		color: $light-color;
 
@@ -314,7 +312,7 @@
 }
 
 .jeweler-info {
-	max-width: 450px;
+	max-width: 420px;
 	padding: 1rem;
 
 	h3 {
@@ -339,63 +337,5 @@
 		line-height: 1.6;
 		text-align: justify;
 		font-weight: 500;
-	}
-}
-
-// Links
-.links {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	background-color: $primary-color;
-	padding-inline: 1rem;
-	padding-block: 3rem;
-	position: relative;
-	// overflow: hidden;
-
-	.section-title {
-		color: $light-color;
-		font-size: 3rem;
-		margin-bottom: unset;
-	}
-
-	.link a {
-		color: $secondary-color;
-		text-transform: capitalize;
-		transition: all 0.5s;
-
-		&:hover {
-			color: $light-color;
-		}
-
-		&:hover::before {
-			content: "►";
-			color: $light-color;
-			margin-right: 5px;
-		}
-	}
-
-	.about-photo {
-		max-width: 150px;
-		position: absolute;
-		right: 5%;
-		border-color: $light-color;
-
-		&:last-child {
-			transform: rotateZ(10deg) translateY(20%);
-		}
-		&:hover {
-			transform: none;
-			box-shadow: none;
-			z-index: unset;
-		}
-		@media screen and (min-width: 700px) {
-			right: 20%;
-			max-width: 200px;
-		}
-	}
-
-	@media screen and (min-width: 700px) {
-		padding: 5rem;
 	}
 }
