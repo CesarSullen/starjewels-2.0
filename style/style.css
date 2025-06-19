@@ -227,6 +227,38 @@ section {
     scale: 1;
   }
 }
+.magic-effect {
+  position: relative;
+}
+.magic-effect::after, .magic-effect::before {
+  content: "✦";
+  font-size: 2rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.magic-effect:hover::before, .magic-effect:active::before {
+  opacity: 1;
+  top: -30px;
+  left: -30px;
+  bottom: unset;
+  right: unset;
+  transform: rotate(360deg);
+}
+.magic-effect:hover::after, .magic-effect:active::after {
+  opacity: 1;
+  top: unset;
+  left: unset;
+  bottom: -30px;
+  right: -30px;
+  transform: rotate(360deg);
+}
+
 .nav {
   position: sticky;
   top: 0;
@@ -445,18 +477,14 @@ section {
 }
 
 .link-item a {
-  color: #1a1a2e;
   text-decoration: none;
   font-size: 1.1rem;
   text-transform: capitalize;
   transition: color 0.3s ease;
 }
-.link-item a:hover {
-  color: #fff;
-}
-.link-item a:hover::before {
+.link-item a:hover::before, .link-item a:hover::after {
   content: "✦";
-  margin-right: 0.5rem;
+  margin: 0.5rem;
   color: #fff;
 }
 
@@ -522,12 +550,11 @@ section {
   }
 }
 
-.developer a {
-  color: #006dff;
+.developer {
   text-decoration: none;
   font-weight: bold;
 }
-.developer a:hover {
+.developer:hover {
   text-decoration: underline;
 }
 
