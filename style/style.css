@@ -1131,9 +1131,6 @@ section {
   letter-spacing: 2px;
   font-size: 4.5dvw;
   margin-top: 1.5rem;
-  animation-delay: 0.2s;
-  filter: blur(15px);
-  transform: translateY(300vh);
 }
 @media screen and (min-width: 700px) {
   .header-subtitle {
@@ -1146,30 +1143,12 @@ section {
   flex-direction: column;
   gap: 10px;
 }
-.cta-section .btn {
-  animation-delay: 0.4s;
-  filter: blur(15px);
-  transform: translateY(300vh);
-}
-@media screen and (min-width: 700px) {
-  .cta-section .btn {
-    animation-delay: 0.6s;
-    filter: blur(15px);
-    transform: translateY(300vh);
-  }
-}
 .cta-section .ghost-btn {
-  animation-delay: 0.6s;
-  filter: blur(15px);
-  transform: translateY(300vh);
   backdrop-filter: blur(5px);
   color: #fff;
 }
 @media screen and (min-width: 700px) {
   .cta-section .ghost-btn {
-    animation-delay: 0.4s;
-    filter: blur(15px);
-    transform: translateY(300vh);
     color: #c05670;
   }
   .cta-section .ghost-btn:hover {
@@ -1198,11 +1177,11 @@ section {
 }
 
 .reason {
-  background-image: url(../assets/silver-bg.png);
+  /* 	background-image: url(../assets/silver-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  background-blend-mode: multiply; */
   background-color: #c05670;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;

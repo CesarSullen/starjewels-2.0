@@ -80,7 +80,6 @@
 	letter-spacing: 2px;
 	font-size: 4.5dvw;
 	margin-top: 1.5rem;
-	@include animation-delay(0.2s);
 
 	@media screen and (min-width: 700px) {
 		font-size: 2.5dvw;
@@ -91,20 +90,11 @@
 	flex-direction: column;
 	gap: 10px;
 
-	.btn {
-		@include animation-delay(0.4s);
-
-		@media screen and (min-width: 700px) {
-			@include animation-delay(0.6s);
-		}
-	}
 	.ghost-btn {
-		@include animation-delay(0.6s);
 		backdrop-filter: blur(5px);
 		color: $light-color;
 
 		@media screen and (min-width: 700px) {
-			@include animation-delay(0.4s);
 			color: $primary-color;
 
 			&:hover {
@@ -134,11 +124,11 @@
 }
 
 .reason {
-	background-image: url(../assets/silver-bg.png);
+	/* 	background-image: url(../assets/silver-bg.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-blend-mode: multiply;
+	background-blend-mode: multiply; */
 	background-color: rgba($color: $primary-color, $alpha: 1);
 
 	border: 1px solid $glass-border;
