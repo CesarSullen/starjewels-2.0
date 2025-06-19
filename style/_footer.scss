@@ -134,7 +134,7 @@
 
 .developer {
 	a {
-		color: $saru-color;
+		color: $synth-color;
 		text-decoration: none;
 		font-weight: bold;
 
@@ -142,4 +142,8 @@
 			text-decoration: underline;
 		}
 	}
+}
+.synth-logo {
+	width: 100%;
+	max-width: 50px;
 }
