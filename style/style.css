@@ -533,7 +533,7 @@ section {
 }
 
 .social-icon {
-  width: 30px;
+  width: 50px;
   transition: transform 0.3s ease;
 }
 .social-icon:hover {
@@ -1177,11 +1177,6 @@ section {
 }
 
 .reason {
-  /* 	background-image: url(../assets/silver-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply; */
   background-color: #c05670;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
@@ -1190,9 +1185,26 @@ section {
   flex-direction: column;
   justify-content: center;
   transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.reason::after {
+  transition: all 0.3s;
+  content: "✯";
+  position: absolute;
+  right: -40%;
+  bottom: -60%;
+  font-size: 25rem;
+  color: rgb(128.2068965517, 47.7931034483, 67.5172413793);
+  pointer-events: none;
+  line-height: 1;
+  z-index: -1;
 }
 .reason:hover {
   transform: scale(1.05);
+}
+.reason:hover::after {
+  transform: rotate(90deg) scale(0.2);
 }
 .reason .reason-icon {
   width: 50px;

@@ -124,13 +124,7 @@
 }
 
 .reason {
-	/* 	background-image: url(../assets/silver-bg.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-blend-mode: multiply; */
 	background-color: rgba($color: $primary-color, $alpha: 1);
-
 	border: 1px solid $glass-border;
 	border-radius: $border-radius-rounded;
 	padding: 2rem;
@@ -138,9 +132,28 @@
 	flex-direction: column;
 	justify-content: center;
 	transition: all 0.3s;
+	position: relative;
+	overflow: hidden;
+
+	&::after {
+		transition: all 0.3s;
+		content: "\272F";
+		position: absolute;
+		right: -40%;
+		bottom: -60%;
+		font-size: 25rem;
+		color: darken($color: $primary-color, $amount: 20px);
+		pointer-events: none;
+		line-height: 1;
+		z-index: -1;
+	}
 
 	&:hover {
 		transform: scale(1.05);
+
+		&::after {
+			transform: rotate(90deg) scale(0.2);
+		}
 	}
 
 	.reason-icon {
