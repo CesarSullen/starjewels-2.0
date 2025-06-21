@@ -110,7 +110,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="../docs/warranty.html">
               <button class="btn ghost-btn">garantía</button>
             </a>
-            <button class="btn ghost-btn">Comprar</button>
+            <a href="${product.src}">
+              <button class="btn ghost-btn">Comprar</button>
+            </a>
           </div>
         `;
 

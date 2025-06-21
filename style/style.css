@@ -1190,7 +1190,7 @@ section {
 }
 .reason::after {
   transition: all 0.3s;
-  content: "✯";
+  content: "✭";
   position: absolute;
   right: -40%;
   bottom: -60%;

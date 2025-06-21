@@ -2,13 +2,14 @@
 	{
 		"id": 1,
 		"name": "Anillo Constelación",
-		"image": "../assets/jewels/points_1.JPG",
+		"image": "https://images.getbaxar.com/media/products/4SyOsJEAGi-1748462140973.jpg",
 		"price": 12.0,
 		"discountPrice": 9.0,
 		"alt": "Anillo Constelación",
+		"src": "https://getbaxar.com/products/68376a3de9b612e08cc2456a",
 		"images": [
 			{
-				"src": "../assets/jewels/points_1.JPG",
+				"src": "https://images.getbaxar.com/media/products/4SyOsJEAGi-1748462140973.jpg",
 				"alt": "Vista frontal del Anillo Constelación"
 			}
 		],
@@ -18,31 +19,15 @@
 	},
 	{
 		"id": 2,
-		"name": "Anillo de Lágrimas",
-		"image": "../assets/jewels/drops_1.JPG",
-		"price": 12.5,
-		"discountPrice": null,
-		"alt": "Anillo de Lágrimas",
-		"images": [
-			{
-				"src": "../assets/jewels/drops_1.JPG",
-				"alt": "Vista frontal del Anillo de Lágrimas"
-			}
-		],
-		"details": [
-			"Este anillo está certificado con plata de ley 925. Ajustable. Refleja sencillez, sensibilidad y adaptación. Perfecto para combinar con estilos casuales color pasteles o estampados de flores minimalistas."
-		]
-	},
-	{
-		"id": 3,
 		"name": "Anillo Infinito",
-		"image": "../assets/jewels/infinite_1.JPG",
+		"image": "https://images.getbaxar.com/media/products/09WJjp2Iz2-1748461187564.jpg",
 		"price": 11.9,
 		"discountPrice": 9.0,
 		"alt": "Anillo Infinito",
+		"src": "https://getbaxar.com/products/68376684e9b612e08cc244bd",
 		"images": [
 			{
-				"src": "../assets/jewels/infinite_1.JPG",
+				"src": "https://images.getbaxar.com/media/products/09WJjp2Iz2-1748461187564.jpg",
 				"alt": "Vista frontal del Anillo Infinito"
 			}
 		],
@@ -51,19 +36,20 @@
 		]
 	},
 	{
-		"id": 4,
+		"id": 3,
 		"name": "Anillo D’Mami",
-		"image": "../assets/jewels/mom_1.JPG",
+		"image": "https://images.getbaxar.com/media/products/oXCtHLXln1-1748461065932.jpg",
 		"price": 12.5,
 		"discountPrice": 9.0,
 		"alt": "Anillo D’Mami",
+		"src": "https://getbaxar.com/products/6837660be9b612e08cc2449f",
 		"images": [
 			{
-				"src": "../assets/jewels/mom_1.JPG",
+				"src": "https://images.getbaxar.com/media/products/oXCtHLXln1-1748461065932.jpg",
 				"alt": "Vista frontal del Anillo D’Mami"
 			},
 			{
-				"src": "../assets/jewels/mom_2.JPG",
+				"src": "https://images.getbaxar.com/media/products/0nHLhvBu68-1748461066023.jpg",
 				"alt": "Vista frontal del Anillo D’Mami"
 			}
 		],
@@ -72,32 +58,16 @@
 		]
 	},
 	{
-		"id": 5,
-		"name": "Anillo Lovely Rose",
-		"image": "../assets/jewels/pink-heart_1.JPG",
-		"price": 12.4,
-		"discountPrice": null,
-		"alt": "Anillo Lovely Rose",
-		"images": [
-			{
-				"src": "../assets/jewels/pink-heart_1.JPG",
-				"alt": "Vista frontal del Anillo Lovely Rose"
-			}
-		],
-		"details": [
-			"Este anillo está certificado con plata de ley 925. Talla #7. Contiene una piedra de zirconia color rosa en forma de corazón. Refleja amor genuino, sencillez y feminidad en toda su expresión. Perfecto para combinar con accesorios brillantes y elegantes y atuendos de colores blancos y plateados."
-		]
-	},
-	{
-		"id": 6,
+		"id": 4,
 		"name": "Anillo de Ramas Plateadas",
-		"image": "../assets/jewels/plant_1.JPG",
+		"image": "https://images.getbaxar.com/media/products/OXdpjqw1yg-1748461284188.jpg",
 		"price": 12.2,
 		"discountPrice": null,
 		"alt": "Anillo de Ramas Plateadas",
+		"src": "https://getbaxar.com/products/683766e4e9b612e08cc244d7",
 		"images": [
 			{
-				"src": "../assets/jewels/plant_1.JPG",
+				"src": "https://images.getbaxar.com/media/products/OXdpjqw1yg-1748461284188.jpg",
 				"alt": "Vista frontal del Anillo de Ramas Plateadas"
 			}
 		],
@@ -106,15 +76,16 @@
 		]
 	},
 	{
-		"id": 7,
+		"id": 5,
 		"name": "Anillo Reina Blanca",
-		"image": "../assets/jewels/silver-heart_1.JPG",
+		"image": "https://images.getbaxar.com/media/products/FQBoHq1DQ--1748460863216.jpg",
 		"price": 12.8,
 		"discountPrice": null,
 		"alt": "Anillo Reina Blanca",
+		"src": "https://getbaxar.com/products/68376540e9b612e08cc24471",
 		"images": [
 			{
-				"src": "../assets/jewels/silver-heart_1.JPG",
+				"src": "https://images.getbaxar.com/media/products/FQBoHq1DQ--1748460863216.jpg",
 				"alt": "Vista frontal del Anillo Reina Blanca"
 			}
 		],
@@ -123,15 +94,16 @@
 		]
 	},
 	{
-		"id": 8,
+		"id": 6,
 		"name": "Anillo Cuadrilátero",
-		"image": "../assets/jewels/square_1.JPG",
+		"image": "https://images.getbaxar.com/media/products/5JmH_AlExa-1748460746008.jpg",
 		"price": 12.0,
 		"discountPrice": 9.0,
 		"alt": "Anillo Cuadrilátero",
+		"src": "https://getbaxar.com/products/683764cae9b612e08cc2444c",
 		"images": [
 			{
-				"src": "../assets/jewels/square_1.JPG",
+				"src": "https://images.getbaxar.com/media/products/5JmH_AlExa-1748460746008.jpg",
 				"alt": "Vista frontal del Anillo Cuadrilátero"
 			}
 		],
